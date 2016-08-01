@@ -116,7 +116,7 @@ module.exports = (opts) ->
      * @return {Promise} - returns formatted content type entries object
     ###
 
-    format_content = (content) -> W.map(content, format_entry)
+    format_content = (content) -> W.map(content.items, format_entry)
 
     ###*
      * Formats a single entry object from Contentful API response
